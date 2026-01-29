@@ -1,6 +1,6 @@
 baseURL = 'https://barral0.github.io/barral-log/'
 languageCode = 'pt-BR'
-title = 'My New Hugo Site'
+title = 'Blog do Barral'
 theme = 'PaperMod' 
 
 [params]
