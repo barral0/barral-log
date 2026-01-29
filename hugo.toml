@@ -2,25 +2,25 @@ baseURL = 'https://barral.email/'
 languageCode = 'pt-BR'
 title = 'Blog do Barral'
 theme = 'PaperMod' 
+description = "Documentando 140 álbuns no iPod Video 5th Gen."
 
-[params.profileMode]
-    enabled = true
-    title = "Filipe Barral"
-    subtitle = "Ciência da Computação | QA Tester "
-	imageUrl = "images/perfil.png"
-    imageTitle = "Filipe Barral"
-    
-    [[params.profileMode.buttons]]
-        name = "Reviews"
-        url = "/posts"
+[[menu.main]]
+    identifier = "posts"
+    name = "Reviews"
+    url = "/posts/"
+    weight = 10
 
-	[[params.profileMode.buttons]]
-        name = "YouTube"
-        url = "https://youtube.com/@falabarral"
-		
-	[[params.profileMode.buttons]]
-        name = "Discord"
-        url = "https://discord.gg/cwQp7BhsC5"
+[[menu.main]]
+    identifier = "youtube"
+    name = "YouTube"
+    url = "https://youtube.com/@falabarral"
+    weight = 20
+
+[[menu.main]]
+    identifier = "discord"
+    name = "Discord"
+    url = "https://discord.gg/cwQp7BhsC5"
+    weight = 30
 
 [params]
     defaultTheme = "auto"
