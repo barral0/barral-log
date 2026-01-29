@@ -1,4 +1,5 @@
 baseURL = 'https://barral.email/'
+disqusShortname = 'blog-do-barral'
 languageCode = 'pt-BR'
 title = 'Blog do Barral'
 theme = 'PaperMod' 
@@ -9,7 +10,6 @@ description = "Documentando 140 álbuns no iPod Video 5th Gen."
     name = "Reviews"
     url = "/posts/"
     weight = 10
-
 [[menu.main]]
     identifier = "youtube"
     name = "YouTube"
@@ -21,7 +21,31 @@ description = "Documentando 140 álbuns no iPod Video 5th Gen."
     name = "Discord"
     url = "https://discord.gg/cwQp7BhsC5"
     weight = 30
+	
+[[menu.main]]
+    identifier = "search"
+    name = "Buscar"
+    url = "/search/"
+    weight = 5
 
 [params]
     defaultTheme = "auto"
-    showCodeCopyButtons = true
+	ShowShareButtons = "true"
+	ShowReadingTime = "true"
+	ShowToc = "true"
+
+[params.homeInfoParams]
+        Title = "Olá! 👋"
+        Content = "Bem-vindo ao Barral Log. Aqui documento o Protocolo 2026 e minha jornada."
+	[[params.socialIcons]]
+        name = "youtube"
+        url = "https://youtube.com/@falabarral"
+	[[params.socialIcons]]
+        name = "discord"
+        url = "https://discord.gg/cwQp7BhsC5"
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/barral0"	
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
