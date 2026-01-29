@@ -3,6 +3,20 @@ languageCode = 'pt-BR'
 title = 'Blog do Barral'
 theme = 'PaperMod' 
 
+[params.profileMode]
+    enabled = true
+    title = "Filipe Barral"
+    subtitle = "Ciência da Computação | QA Tester | Protocolo 2026. Um registro diário de 140 álbuns via iPod Video 5th Gen."
+    imageTitle = "Filipe Barral"
+    
+    [[params.profileMode.buttons]]
+        name = "Reviews"
+        url = "/posts"
+
+    [[params.profileMode.buttons]]
+        name = "GitHub"
+        url = "https://github.com/seu-usuario"
+
 [params]
     defaultTheme = "auto"
     showCodeCopyButtons = true
