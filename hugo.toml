@@ -15,7 +15,15 @@ theme = 'PaperMod'
 
     [[params.profileMode.buttons]]
         name = "GitHub"
-        url = "https://github.com/seu-usuario"
+        url = "https://github.com/barral0"
+
+	[[params.profileMode.buttons]]
+        name = "YouTube"
+        url = "https://youtube.com/@falabarral"
+		
+	[[params.profileMode.buttons]]
+        name = "Discord"
+        url = "https://discord.gg/cwQp7BhsC5"
 
 [params]
     defaultTheme = "auto"
