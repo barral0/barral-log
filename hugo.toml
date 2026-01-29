@@ -2,3 +2,7 @@ baseURL = 'https://barral0.github.io/barral-log/'
 languageCode = 'pt-BR'
 title = 'My New Hugo Site'
 theme = 'PaperMod' 
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
