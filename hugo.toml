@@ -7,7 +7,7 @@ description = "Documentando 140 álbuns no iPod Video 5th Gen."
 
 [[menu.main]]
     identifier = "posts"
-    name = "Reviews"
+    name = "Posts"
     url = "/posts/"
     weight = 10
 [[menu.main]]
