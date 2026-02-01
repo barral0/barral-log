@@ -1,51 +1,90 @@
 baseURL = 'https://barral.email/'
 disqusShortname = 'blog-do-barral'
-languageCode = 'pt-BR'
-title = 'Blog do Barral'
 theme = 'PaperMod' 
-description = "Documentando 140 álbuns no iPod Video 5th Gen."
+defaultContentLanguage = 'pt-br'
 
-[[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-[[menu.main]]
-    identifier = "youtube"
-    name = "YouTube"
-    url = "https://youtube.com/@falabarral"
-    weight = 20
-
-[[menu.main]]
-    identifier = "discord"
-    name = "Discord"
-    url = "https://discord.gg/cwQp7BhsC5"
-    weight = 30
-	
-[[menu.main]]
-    identifier = "search"
-    name = "Buscar"
-    url = "/search/"
-    weight = 5
-
+# Configurações globais (valem para ambos)
 [params]
     defaultTheme = "auto"
-	ShowShareButtons = "true"
-	ShowReadingTime = "true"
-	ShowToc = "true"
-
-[params.homeInfoParams]
-        Title = "Olá! 👋"
-        Content = "Bem-vindo ao Barral Log. Aqui documento o Protocolo 2026 e minha jornada."
-	[[params.socialIcons]]
-        name = "youtube"
-        url = "https://youtube.com/@falabarral"
-	[[params.socialIcons]]
-        name = "discord"
-        url = "https://discord.gg/cwQp7BhsC5"
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/barral0"	
+    ShowShareButtons = true
+    ShowReadingTime = true
+    ShowToc = true
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
+
+# --- CONFIGURAÇÃO DE IDIOMAS ---
+
+[languages]
+    # PORTUGUÊS
+    [languages.pt-br]
+        languageCode = 'pt-BR'
+        languageName = "Português"
+        weight = 1
+        title = "Blog do Barral"
+        contentDir = "content" # Pasta padrão
+        
+        [languages.pt-br.params]
+            description = "Documentando 140 álbuns no iPod Video 5th Gen."
+            [languages.pt-br.params.homeInfoParams]
+                Title = "Olá! 👋"
+                Content = "Bem-vindo ao Barral Log. Aqui documento o Protocolo 2026 e minha jornada."
+
+        # Menus em Português
+        [[languages.pt-br.menu.main]]
+            identifier = "search"
+            name = "Buscar"
+            url = "/search/"
+            weight = 5
+        [[languages.pt-br.menu.main]]
+            identifier = "posts"
+            name = "Posts"
+            url = "/posts/"
+            weight = 10
+        [[languages.pt-br.menu.main]]
+            identifier = "youtube"
+            name = "YouTube"
+            url = "https://youtube.com/@falabarral"
+            weight = 20
+
+    # INGLÊS
+    [languages.en]
+        languageCode = 'en-US'
+        languageName = "English"
+        weight = 2
+        title = "Barral's Blog"
+        # contentDir = "content/en" # Opcional: se quiser separar por pastas
+
+        [languages.en.params]
+            description = "Documenting 140 albums on an iPod Video 5th Gen."
+            [languages.en.params.homeInfoParams]
+                Title = "Hi there! 👋"
+                Content = "Welcome to Barral Log. Here I document Protocol 2026 and my journey."
+
+        # Menus em Inglês
+        [[languages.en.menu.main]]
+            identifier = "search"
+            name = "Search"
+            url = "/en/search/"
+            weight = 5
+        [[languages.en.menu.main]]
+            identifier = "posts"
+            name = "Posts"
+            url = "/en/posts/"
+            weight = 10
+        [[languages.en.menu.main]]
+            identifier = "youtube"
+            name = "YouTube"
+            url = "https://youtube.com/@falabarral"
+            weight = 20
+
+# Ícones sociais (globais, aparecem em ambos)
+[[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/@falabarral"
+[[params.socialIcons]]
+    name = "discord"
+    url = "https://discord.gg/cwQp7BhsC5"
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/barral0"
