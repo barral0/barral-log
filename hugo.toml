@@ -6,9 +6,9 @@ defaultContentLanguage = 'pt-br'
 # Configurações globais (valem para ambos)
 [params]
     defaultTheme = "auto"
-    ShowShareButtons = true
     ShowReadingTime = true
     ShowToc = true
+	comments = true
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
